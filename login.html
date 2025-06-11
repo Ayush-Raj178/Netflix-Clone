@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Sign In</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon" />
+</head>
+<body class="login-body">
+    <nav class="nav">
+        <a href="index.html">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/1600px-Logonetflix.png" alt="Netflix" />
+        </a>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Sign In</h1>
+            <form class="login-form" action="#" method="POST" id="loginForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Email or phone number" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-button">Sign In</button>
+                <div class="form-help">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="help-link">Need help?</a>
+                </div>
+            </form>
+            <script>
+                document.getElementById('loginForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // Simulate successful login
+                    window.location.href = 'home.html';
+                });
+            </script>
+            <div class="login-footer">
+                <p>New to Netflix? <a href="signup.html">Sign up now</a></p>
+                <p class="recaptcha-terms">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

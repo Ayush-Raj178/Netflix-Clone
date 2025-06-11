@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Sign Up</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon" />
+</head>
+<body class="login-body">
+    <nav class="nav">
+        <a href="index.html">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/1600px-Logonetflix.png" alt="Netflix" />
+        </a>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-box signup-box">
+            <h1>Sign Up</h1>
+            <form class="login-form" action="#" method="POST" id="signupForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Full name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirm password" required>
+                </div>
+                <button type="submit" class="login-button">Sign Up</button>
+                <p class="terms">By clicking "Sign Up" you agree to our Terms of Service and Privacy Policy.</p>
+            </form>
+            <script>
+                document.getElementById('signupForm').addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  // Simulate successful signup
+                  window.location.href = 'index.html';
+                });
+            </script>
+            <div class="login-footer">
+                <p>Already have an account? <a href="login.html">Sign in now</a></p>
+                <p class="recaptcha-terms">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
